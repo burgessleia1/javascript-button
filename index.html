@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RGB Button Counter</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container"></div>
+    <img src="" alt="Cute Cat" />
+
+    <p>
+      This project is inside a small container, you can click to add to the counter
+      or hold down the button to speed up the counter.
+    </p>
+
+    <h3>
+      <strong>Select your color:</strong>
+      <span id="rgbDisplay">rgb(157,83,66)</span>
+    </h3>
+
+    <div class="sliders">
+      <label>red:
+        <input type="range" min="0" max="255" value="157" id="redSlider" />
+      </label>
+      <label>green:
+        <input type="range" min="0" max="255" value="83" id="greenSlider" />
+      </label>
+      <label>blue:
+        <input type="range" min="0" max="255" value="66" id="blueSlider" />
+      </label>
+    </div>
+
+    <button id="counterBtn">BUTTON</button>
+
+    <h2>Clicks: <span id="clicks">0</span></h2>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
