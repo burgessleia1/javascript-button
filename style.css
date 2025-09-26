@@ -1,16 +1,27 @@
+/* Body with background and white frame */
 body {
   margin: 0;
-  padding: 0;
-  background-color: rgb(157, 83, 86);
+  padding: 20px;                 /* space between frame and window edge */
+  background-color: rgb(157,83,86);
   font-family: Arial, sans-serif;
   text-align: center;
+
+  /* White frame effect */
+  border: 12px solid white;      /* thickness of the frame */
+  box-sizing: border-box;        /* include border in page size */
+  min-height: 100vh;             /* full screen height */
 }
 
+/* Container with project content */
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px; /* pushes content a little below the very top */
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: rgba(255, 255, 255, 0.05); /* subtle inside background */
+  border-radius: 12px;
 }
 
 img {
@@ -20,42 +31,38 @@ img {
   margin-bottom: 20px;
 }
 
-
-p {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-h3 {
-  margin: 10px 0;
-}
-
 .sliders {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-label {
-  display: block;
-  margin: 8px 0;
-  color: #fff;
-}
-
-input[type="range"] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
+  margin: 15px 0;
+}
+
+.sliders label {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  color: white;
+  margin: 5px 0;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: linear-gradient(to bottom, #e74c3c, #c0392b);
-  color: #fff;
+  background-color: #e74c3c;
+  color: white;
   border: none;
   border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 button:hover {
-  background: linear-gradient(to bottom, #c0392b, #a93226);
+  background-color: #c0392b;
 }
 
+h2 {
+  color: white;
+  margin-top: 15px;
+}
